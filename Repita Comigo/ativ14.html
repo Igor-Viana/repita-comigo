@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre 24 e 42</title>
+</head>
+<body>
+    <script>
+        /*Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores 
+        lidos estão no intervalo [24,42] (incluindo os valores 24 e 42 no intervalo) e quantos deles 
+        estão fora deste intervalo.*/
+        var entre = [];
+        var fora = [];
+
+        for (let contador = 0; contador < 10; contador++) {
+            var num = parseFloat(prompt("Digite um número: "));
+            if (num > 23 && num < 43) {
+                entre.push(num);
+            };
+            if (num < 24 || num > 42) {
+                fora.push(num);
+            };
+        }
+
+        alert("Os números entre 24 e 42 são: " + entre + "\n e os que estão fora são: " + fora);
+    </script>
+</body>
+</html>

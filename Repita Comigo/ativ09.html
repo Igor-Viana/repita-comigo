@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores inteiros entre 0 e Nº</title>
+</head>
+<body>
+    <script>
+        //entrada e validação do valor
+        var num = parseInt(prompt("Digite um número inteiro: "));
+        while (num <= 0) {
+            alert("O número deve ser maior que zero! Digite novamente: ");
+            var num = parseInt(prompt("Digite novamente: "));
+        };
+
+        //criação do array e estrutura de repetição
+        var conjuntoNum = [];
+        contador = 0
+        while (contador < num) {
+            contador = contador + 1;
+            conjuntoNum.push(contador);
+        };
+
+        alert("Os números inteiros entre 1 e " + num + " são: \n" + conjuntoNum);
+    </script>
+</body>
+</html>

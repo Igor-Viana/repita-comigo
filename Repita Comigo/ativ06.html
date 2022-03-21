@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do(s) Aluno(s)</title>
+</head>
+<body>
+    <script>
+        //laço while, sempre que chega no final mostra o resultado e pergunta se quer recomeçar ou terminar
+        cont = 1;
+        while (cont == 1) {
+            var nomeAluno = prompt("Qual o nome do aluno? ");
+            var nota1 = parseFloat(prompt("Digite a 1ª nota: "));
+            var nota2 = parseFloat(prompt("Digite a 2ª: "));
+            alert("A média do aluno " + nomeAluno + " é: " + (nota1+nota2)/2);
+
+            var continuar = parseInt(prompt("Deseja calcular a média de outro aluno? \n1. Sim \n2. Não"));
+            if (continuar == 2) {
+                cont = 0;
+            };
+        };
+
+        alert("Fim do programa");
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores iguais ou maiores</title>
+</head>
+<body>
+    <script>
+        var cont = 1
+
+        while (cont == 1) {
+            var num1 = parseFloat(prompt("Digite o primeiro número: "));
+            var num2 = parseFloat(prompt("Digite o segundo: "));
+
+            if (num1 > num2) {
+            alert("O primeiro número é MAIOR!");
+            } else if (num1 < num2) {
+            alert("O segundo número é MAIOR!")
+            } else {
+            alert("Os dois números são IGUAIS!");
+            };
+
+            var cont = parseInt(prompt("Deseja continuar?\n1. Sim\n2. Não"));
+        };
+        
+        alert("Programa Encerrado!")
+    </script>
+</body>
+</html>
